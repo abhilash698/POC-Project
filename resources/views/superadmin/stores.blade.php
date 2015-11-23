@@ -56,6 +56,7 @@
                                                         <span class="caret"></span>
                                                     </a>
                                                     <ul id="menu6" class="dropdown-menu animated fadeInDown" role="menu">
+                                                     
                                                         <li role="presentation"><a role="menuitem" tabindex="-1" href="/superadmin/addelements/{{ $form['id'] }}">Add Elements</a>
                                                         </li>
                                                         <li role="presentation"><a role="menuitem" tabindex="-1" href="/superadmin/editform/{{ $form['id'] }}">Edit</a>

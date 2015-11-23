@@ -16,7 +16,7 @@ class FormElementsTableSeeder extends Seeder
             ['form_id' => 1, 'type' => 'TXT', 'title' => 'Enter your name'],
             ['form_id' => 1, 'type' => 'TXTA', 'title' => 'Describe yourself'],
             ['form_id' => 1, 'type' => 'RAD', 'title' => 'How would you discribe your experience with Maxwell?'],
-            ['form_id' => 1, 'type' => 'CHK', 'title' => 'I accept all terms & conditions'],
+            ['form_id' => 1, 'type' => 'CHK', 'title' => 'Select places you have travelled'],
         ];
         DB::table('feedback_form_elements')->insert($elements);
     }

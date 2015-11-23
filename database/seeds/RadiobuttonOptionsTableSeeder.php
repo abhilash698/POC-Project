@@ -18,6 +18,11 @@ class RadiobuttonOptionsTableSeeder extends Seeder
             ['element_id' => 3, 'option' => 'OK'],
             ['element_id' => 3, 'option' => 'good'],
             ['element_id' => 3, 'option' => 'Great'],
+            ['element_id' => 4, 'option' => 'Hyderabad'],
+            ['element_id' => 4, 'option' => 'Bangalore'],
+            ['element_id' => 4, 'option' => 'Chennai'],
+            ['element_id' => 4, 'option' => 'Mumbai'],
+            ['element_id' => 4, 'option' => 'New Delhi'],
         ];
         DB::table('radiobutton_options')->insert($buttons);
     }

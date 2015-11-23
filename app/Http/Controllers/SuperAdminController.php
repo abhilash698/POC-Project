@@ -69,6 +69,15 @@ class SuperAdminController extends Controller {
 
      public function getAddElements($form_id){
      	$form['form'] = StoreFeedbackForms::where('id',$form_id)->get();
+
+     	/*$form['formElements'] = DB::table('feedback_form_elements AS elements')
+     	->leftJoin('radiobutton_options AS options','elements.id','=','options.element_id')
+     	->where('elements.form_id',$form_id)
+     	->select('elements.*',DB::raw("GROUP_CONCAT(options.option SEPARATOR ',') as optionValues"))
+     	->groupBy('element_id')
+     	->get();*/
+
+     	//return $form['formElements'];
 		return view('superadmin.addelements',$form);
 	}
 
